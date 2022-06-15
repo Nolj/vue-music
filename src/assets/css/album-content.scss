@@ -1,0 +1,96 @@
+@import "var.scss";
+@import "global.scss";
+
+.album-content {
+  background-color: $color-white;
+  border-radius: $border-radius-songlist;
+  padding  : 20px 40px;
+  min-width: 700px;
+
+  .title {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 23px;
+    color: #ff4700c7;
+    >hr{
+      margin-top: 5px;
+    }
+  }
+  > ul {
+    width: 100%;
+    padding-bottom: 50px;
+    > li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-indent: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.song-item {
+  @include layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  .item-index {
+    width: 3%;
+    text-align: center;
+  }
+  .item-title {
+    width: 24%;
+    text-align: center;
+  }
+  .item-name {
+    width: 20%;
+    text-align: center;
+  }
+  .item-intro {
+    width: 22%;
+    text-align: center;
+  }
+  .item-duration {
+    width: 17%;
+    text-align: center;
+    padding-left: 1px;
+  }
+}
+
+.is-play {
+  color: $color-blue-active;
+  font-weight: bold;
+}
+
+.icon {
+  @include icon(1.3em, $color-blue-active);
+  vertical-align: -0.3em;
+  right: 5px;
+}
+
+.songlist-oper {
+  display: none;
+  .iconfont {
+    margin-left: 15px;
+    font-size: 22px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+.song-item:hover{
+  .songlist-oper{
+    display: block;
+  }
+}
+.icon-collect-active{
+  color:red;
+}
+
+
+.hover:hover{
+  color: #ff641e;
+}

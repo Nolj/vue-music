@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  margin: 0 -10px;
+  font-size: 0;
+    .album-name {
+      padding: 30px 15px 10px 0;
+      font-size: 16px;
+      color: #333;
+      word-break: break-all;
+    }
+
+    .artist-name {
+      font-size: 14px;
+      color: #999;
+    }
+  .info {
+    width: 120px;
+    overflow: hidden;
+  }
+
+}
